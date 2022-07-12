@@ -21,7 +21,6 @@ class SignInScreen extends ConsumerWidget {
           child: ElevatedButton(
             onPressed: state.isLoading
                 ? null
-                // otherwise, get the notifier and sign in
                 : () => ref
                     .read(signInScreenControllerProvider.notifier)
                     .signInAnonymously(),
